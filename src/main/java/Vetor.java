@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Vetor {
     int N;
     float[] numeros;
-    float maiorValor, menorValor, media;
+    float maiorValor, menorValor, media, soma;
 
     public void leDados() {
         Scanner sc = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class Vetor {
     public void preencherVetor() {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < N; i++) {
-            System.out.println("Digite o valor do vetor na posição " + i + " :");
+            System.out.println("Digite o valor do vetor na posição " + i + ":");
             numeros[i] = sc.nextFloat();
         }
     }
@@ -24,7 +24,7 @@ public class Vetor {
     public void calculaVetor() {
         maiorValor = numeros[0];
         menorValor = numeros[0];
-        float soma = numeros[0];
+        soma = numeros[0];
 
         for (int i = 1; i < N; i++) {
             if (numeros[i] > maiorValor)
@@ -42,5 +42,6 @@ public class Vetor {
         System.out.println("Maior valor: " + maiorValor);
         System.out.println("Menor valor: " + menorValor);
         System.out.println("Média: " + media);
+        System.out.println("Soma: " + soma);
     }
 }

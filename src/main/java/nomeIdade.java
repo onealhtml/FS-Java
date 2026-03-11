@@ -1,13 +1,9 @@
+import java.util.Scanner;
+
 public class nomeIdade {
 
     String nome;
     int idade;
-
-    // construtor: recebe os valores e guarda na classe
-    public nomeIdade(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
 
     public void processo() {
         if (idade <= 12) {
@@ -17,5 +13,15 @@ public class nomeIdade {
         } else {
             System.out.println(nome + " é Adulto");
         }
+    }
+
+    void leDados() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o nome: ");
+        nome = sc.next();
+
+        System.out.println("Digite a idade: ");
+        idade = sc.nextInt();
     }
 }

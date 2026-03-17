@@ -5,20 +5,22 @@ public class Numeros {
     float[] numeros;
     float maiorValor, menorValor, media, soma;
 
-    public void leDados() {
+    public void leN() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite o tamanho do vetor:");
+        System.out.print("Digite o tamanho do vetor: ");
         N = sc.nextInt();
         numeros = new float[N];
+        System.out.print("\n");
     }
 
     public void preencherVetor() {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < N; i++) {
-            System.out.println("Digite o valor do vetor na posição " + i + ":");
+            System.out.print("Digite o valor do vetor na posição " + i + ": ");
             numeros[i] = sc.nextFloat();
         }
+        System.out.print("\n");
     }
 
     public void calculaVetor() {

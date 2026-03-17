@@ -1,6 +1,6 @@
 public class Exercicio2 {
     public static void main(String[] args) {
-        Vetor vetor = new Vetor();
+        Numeros vetor = new Numeros();
 
         vetor.leDados();
         vetor.preencherVetor();

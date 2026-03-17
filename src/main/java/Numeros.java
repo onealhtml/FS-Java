@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Vetor {
+public class Numeros {
     int N;
     float[] numeros;
     float maiorValor, menorValor, media, soma;

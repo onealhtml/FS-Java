@@ -19,6 +19,11 @@ public class Conta {
     }
 
     public void sacar(double valor) {
+        if (saldo <= 0) {
+            System.out.println("Erro: Saldo insuficiente!");
+            return;
+        }
+
         if (valor > 0) {
             this.saldo -= valor;
             System.out.println("Saque de R$ " + valor + " realizado!");

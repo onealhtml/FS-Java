@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Numeros {
-    int N;
-    float[] numeros;
-    float maiorValor, menorValor, media, soma;
+    private int N;
+    private float[] numeros;
+    private float maiorValor, menorValor, media, soma;
 
     public void leN() {
         Scanner sc = new Scanner(System.in);

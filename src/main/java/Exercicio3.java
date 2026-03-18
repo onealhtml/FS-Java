@@ -17,6 +17,5 @@ public class Exercicio3 {
         var conta3 = new Conta("Paulo Colado", "987.654.321-01");
         conta3.sacar(1000);
         conta3.mostrarDados();
-        
     }
 }

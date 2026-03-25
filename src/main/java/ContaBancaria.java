@@ -1,9 +1,9 @@
-public class Conta {
+public class ContaBancaria {
     private final String nome;
     private final String cpf;
     private double saldo;
 
-    public Conta(String nome, String cpf) {
+    public ContaBancaria(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
         this.saldo = 0;
